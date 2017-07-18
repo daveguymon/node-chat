@@ -16,6 +16,7 @@ module.exports = {
   update: (req, res) => {
     const { text } = req.body;
     const updateID = req.params.id;
+    console.log(typeof updateID)
     const messageIndex = messages.findIndex((message) => {
       return message.id == updateID;
     })
